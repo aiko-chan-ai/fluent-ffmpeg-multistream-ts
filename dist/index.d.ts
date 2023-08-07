@@ -1,7 +1,6 @@
-/// <reference types="node" />
-/// <reference types="node" />
 import net from 'net';
 import stream from 'stream';
+
 declare class UnixStream {
     url: string;
     socketPath: string;
@@ -9,4 +8,5 @@ declare class UnixStream {
 }
 declare function StreamInput(stream: stream.Readable): UnixStream;
 declare function StreamOutput(stream: stream.Writable): UnixStream;
-export { StreamOutput, StreamInput };
+
+export { StreamInput, StreamOutput };
